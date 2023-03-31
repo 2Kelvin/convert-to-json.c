@@ -21,9 +21,14 @@ int main(void)
      */
     while (scanf("%f, %f, %79[^\n]", &latitude, &longitude, info) == 3)
     {
-        if (latitude < -90 || latitude > 90 || longitude < -180 || longitude > 180)
+        if (latitude < -90 || latitude > 90)
         {
-            puts("Error! Invalid latitude or longitude");
+            fprintf(stderr, "Invalid latitude %f", latitude);
+            return (2);
+        }
+        else if (longitude < -180 || longitude > 180)
+        {
+            fprintf(stderr, "Invalid longitude %f", longitude);
             return (2);
         }
         else
