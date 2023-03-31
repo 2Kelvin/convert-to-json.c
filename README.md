@@ -20,9 +20,9 @@
 So basically: **there is only 1 stream of input (Standard Input) & 2 outputs (Standard Output & Standard Error)**
 
 By default:
-- Standard Input is derives data from the keyboard
-- Standard Output is displays data to the screen
-- Standard Error is displays erros to the screen 
+- Standard Input derives data from the keyboard
+- Standard Output displays data to the screen
+- Standard Error displays errors to the screen 
 
 `fprintf()` allows you to **choose where you want to send text to; standard output or standard error**
 ```c
